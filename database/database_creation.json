@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "title": "the batman",
+        "releaseYear": "2022",
+        "genre": "thriller",
+        "coverUrl": ""
+    },
+    {
+        "id": "2",
+        "title": "avatar: the way of the water",
+        "releaseYear": "2022",
+        "genre": "sci-fi",
+        "coverUrl": ""
+    },
+    {
+        "id": "3",
+        "title": "casablanca",
+        "releaseYear": "1942",
+        "genre": "romance",
+        "coverUrl": ""
+    },
+    {
+        "id": "4",
+        "title": "good will hunting",
+        "releaseYear": "1997",
+        "genre": "drama",
+        "coverUrl": ""
+    }
+]
