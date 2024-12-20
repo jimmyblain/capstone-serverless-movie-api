@@ -6,8 +6,8 @@ import json
 # Initialize CosmosDB client
 # In Azure Functions, CosmosDB string is added as App Setting Environmental Variable
 COSMOS_CONNECTION_STRING = os.getenv("CosmosDBConnectionString")
-DATABASE_NAME = "MovieDatabase"       # Replace with your database name
-CONTAINER_NAME = "Movies"     # Replace with your container name
+DATABASE_NAME = "MovieDatabase"
+CONTAINER_NAME = "Movies"
 
 client = CosmosClient.from_connection_string(COSMOS_CONNECTION_STRING)
 database = client.get_database_client(DATABASE_NAME)
@@ -23,7 +23,7 @@ def get_movies(req: func.HttpRequest) -> func.HttpResponse:
     items = list(container.read_all_items())
     
     return func.HttpResponse(
-        json.dumps(items),
+        json.dumps(items, indent=4),
         mimetype="application/json",
         status_code=200
     )
